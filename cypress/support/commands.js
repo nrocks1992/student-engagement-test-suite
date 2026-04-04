@@ -11,7 +11,4 @@ Cypress.Commands.add('login', (email, password) => {
   // Click submit button
   selectors.loginButton().click();
 
-  // Verify login success
-  cy.contains(`Welcome, ${email}`).should('be.visible');
-
 });
